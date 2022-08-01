@@ -80,14 +80,14 @@ for case in cases.keys():
     levels = np.arange(0, 3.1, .25)
     vmax = 3.
     levels = [0, .5, 1, 1.5, 2, 2.5, vmax]
-    axs[0][i].tricontour(x, y, z_ev1, levels=levels, linewidths=.5, colors='k')
+    #axs[0][i].tricontour(x, y, z_ev1, levels=levels, linewidths=.5, colors='k')
     cntr2 = axs[0][i].tricontourf(x, y, z_ev1, levels=levels, cmap=cmap)
     cntr2sEV1.append(cntr2)
     axs[0][i].set(xlim=(0, 1), ylim=(0, 1))
     axs[0][i].yaxis.set_major_locator(ticker.MultipleLocator(.2))
     axs[0][i].xaxis.set_major_locator(ticker.MultipleLocator(.2))
     
-    axs[1][i].tricontour(x, y, z_ev2, levels=levels, linewidths=.5, colors='k')
+    #axs[1][i].tricontour(x, y, z_ev2, levels=levels, linewidths=.5, colors='k')
     cntr2 = axs[1][i].tricontourf(x, y, z_ev2, levels=levels, cmap=cmap)
     cntr2sEV2.append(cntr2)
     axs[1][i].set(xlim=(0, 1), ylim=(0, 1))
